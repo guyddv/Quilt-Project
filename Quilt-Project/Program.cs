@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/* Quilt Project: Ask user input for quilt shape, color, and side length and store that info
+ * into a list for retrieval. */
 namespace Quilt_Project
 {
     class Program
@@ -29,6 +31,9 @@ namespace Quilt_Project
                 Console.WriteLine("Please select an option:");
                 selectedOption = Console.ReadLine();
                 
+
+                // I wanted to use a separate class for shape creation, but ran out of time to figure it out.
+                // Also, didn't put in extensive code for invalid data entry.
 
                 switch (Convert.ToInt32(selectedOption))
                 {
@@ -86,6 +91,10 @@ namespace Quilt_Project
                     case 5:
                         Console.WriteLine("Exiting...");
                         keepGoing = false;
+                        break;
+
+                    default:    // Only checks for first menu entry 
+                        Console.WriteLine("Invalid input.");
                         break;
                 }
 
