@@ -14,7 +14,7 @@ namespace Quilt_Project
 
         public Triangle(string color, int side1, int side2, int side3)
         {
-            Name = "Rectangle";
+            Name = "Triangle";
             Color = color;
             sideOne = side1;
             sideTwo = side2;

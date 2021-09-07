@@ -41,7 +41,8 @@ namespace Quilt_Project
                         Console.WriteLine("Please enter the width.");
                         width = Convert.ToInt32(Console.ReadLine());
                         Rectangle rectangle = new Rectangle(color, length, width);
-                        shapes.Add(shapes);
+                        rectangle.ShapeArea();
+                        shapes.Add(rectangle);
                         Console.WriteLine("Thank you!\n\n");
                         break;
 
@@ -52,7 +53,8 @@ namespace Quilt_Project
                         Console.WriteLine("\nPlease enter the length of a side.");
                         length = Convert.ToInt32(Console.ReadLine());
                         Square square = new Square(color, length);
-                        // Add to list
+                        square.ShapeArea();
+                        shapes.Add(square);
                         Console.WriteLine("Thank you!\n\n");
                         break;
 
@@ -67,7 +69,8 @@ namespace Quilt_Project
                         Console.WriteLine("Please enter the length of the third side.");
                         side3 = Convert.ToInt32(Console.ReadLine());
                         Triangle triangle = new Triangle(color, side1, side2, side3);
-                        // Add to list
+                        triangle.ShapeArea();
+                        shapes.Add(triangle);
                         Console.WriteLine("Thank you!\n\n");
                         break;
 
@@ -77,6 +80,7 @@ namespace Quilt_Project
                         {
                             Console.WriteLine($"{shape.Color} {shape.Name} with area {shape.ShapeArea()}.");
                         }
+                        Console.WriteLine("\n\n");
                         break;
 
                     case 5:
